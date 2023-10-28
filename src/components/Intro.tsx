@@ -8,7 +8,7 @@ const profileImg = "/Me_circle.png";
 
 export default function Intro() {
 	return (
-		<section>
+		<section className="mb-28 max-w-[50rem] text-center sm:mb-0">
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					{/* Div used to wrap image for framer motion, easier this way */}
@@ -42,6 +42,15 @@ export default function Intro() {
 					</motion.span>
 				</div>
 			</div>
+
+			<motion.p
+				className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+				initial={{ opacity: 0, y: 100 }}
+				animate={{ opacity: 1, y: 0 }}>
+				<span className="font-bold">Hello, I'm Jordan.</span> I'm a{" "}
+				<span className="font-bold">full-stack web developer</span> based in <span className="font-bold">Sydney,</span>{" "}
+				Australia. My current focus is <span className="underline">React (Next.js).</span>
+			</motion.p>
 		</section>
 	);
 }
