@@ -2,9 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+// ANNOYING ERROR, SEE NOTES:
+// import corpcommentImg from "@/public/corpcomment.png";
+// import rmtdevImg from "@/public/rmtdev.png";
+// import wordanalyticsImg from "@/public/wordanalytics.png";
+const corpcommentImg = "/corpcomment.png";
+const rmtdevImg = "/rmtdev.png";
+const wordanalyticsImg = "/wordanalytics.png";
 
 export const links = [
 	{
@@ -44,14 +49,16 @@ export const experiencesData = [
 	{
 		title: "Photographer's Assistant",
 		location: "Sydney, Australia",
-		description: "Worked mainly in the Australian fashion photography industry, working with premier fashion brands and renowned photographers.",
+		description:
+			"Worked mainly in the Australian fashion photography industry, working with premier fashion brands and renowned photographers.",
 		icon: React.createElement(CgWorkAlt),
 		date: 2023,
 	},
 	{
 		title: "Camera Assistant",
 		location: "Sydney, Australia",
-		description: "Worked as a freelance camera & lighting technician in diverse projects for platforms such as Netflix and Stan and brands such as Adobe, Virgin Airlines, and Tourism Australia.",
+		description:
+			"Worked as a freelance camera & lighting technician in diverse projects for platforms such as Netflix and Stan and brands such as Adobe, Virgin Airlines, and Tourism Australia.",
 		icon: React.createElement(FaReact),
 		date: 2023,
 	},
