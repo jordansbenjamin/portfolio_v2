@@ -3,13 +3,18 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-// ANNOYING ERROR, SEE NOTES:
+// !ANNOYING ERROR, SEE PERSONAL NOTES:
 // import corpcommentImg from "@/public/corpcomment.png";
 // import rmtdevImg from "@/public/rmtdev.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 const corpcommentImg = "/corpcomment.png";
 const rmtdevImg = "/rmtdev.png";
 const wordanalyticsImg = "/wordanalytics.png";
+
+// NOTE: Using 'as const' for const assertions with TS. While the properties are inferred as strings,
+// the const assertion will treat each individual item in 'links' as an object with specific properties and values.
+// Additionally, these objects, as well as the 'links' array itself, become read-only.
+
 
 export const links = [
 	{
