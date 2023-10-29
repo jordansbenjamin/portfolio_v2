@@ -100,7 +100,7 @@ export const experiencesData = [
 		// and not a TSX file, we cant use JSX here, so we need the default React way to
 		// add components
 		icon: React.createElement(LuGraduationCap),
-		date: 2023,
+		date: "2023",
 	},
 	{
 		title: "Photographer's Assistant",
@@ -108,7 +108,7 @@ export const experiencesData = [
 		description:
 			"Worked mainly in the Australian fashion photography industry, working with premier fashion brands and renowned photographers.",
 		icon: React.createElement(CgWorkAlt),
-		date: 2023,
+		date: "2021-2023",
 	},
 	{
 		title: "Camera Assistant",
@@ -116,6 +116,6 @@ export const experiencesData = [
 		description:
 			"Worked as a freelance camera & lighting technician in diverse projects for platforms such as Netflix and Stan and brands such as Adobe, Virgin Airlines, and Tourism Australia.",
 		icon: React.createElement(FaReact),
-		date: 2023,
+		date: "2017-2022",
 	},
 ] as const;

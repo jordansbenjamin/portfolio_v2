@@ -20,13 +20,17 @@ export default function Experience() {
 	);
 }
 
+// The type of the experiencesData object itself
 type ExperienceItemType = (typeof experiencesData)[number];
 
+// The type of the experience prop is of ExperienceItemType
 type ExperienceProp = {
 	experience: ExperienceItemType;
 };
 
 function ExperienceItem({ experience }: ExperienceProp) {
+	// Since there is an issue with rendering animation react-vertical-timeline
+	// Had to use observer API manually for each experience item when in view
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 	});
@@ -41,7 +45,11 @@ function ExperienceItem({ experience }: ExperienceProp) {
 					border: "1px solid rgba(0,0,0,0.05)",
 					textAlign: "left",
 					padding: "1.3rem 2rem",
-				}}>
+				}}
+				contentArrowStyle={{
+					borderRight: "0.4rem solid #9ca3af"
+				}}
+				date={experience.date}>
 				<h3>{experience.title}</h3>
 				<p>{experience.location}</p>
 				<p>{experience.description}</p>
