@@ -46,7 +46,7 @@ export default function Header() {
 								{/* Conditionally render the active link pill BG */}
 								{link.name === activeSection && (
 									<motion.span
-										className="bg-gray-200 rounded-full absolute inset-0 -z-10"
+										className="bg-gray-100 rounded-full absolute inset-0 -z-10"
 										layoutId="activeSection"
 										transition={{ type: "spring", stiffness: 380, damping: 30 }}></motion.span>
 								)}

@@ -26,7 +26,7 @@ export default function Skills() {
 	return (
 		// max-w-[53rem] restricts the max width of the section
 		// scroll-mt-28 adds space to top when scrolling into section
-		<section ref={ref} className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+		<section ref={ref} id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
 			<SectionHeading>My Skills</SectionHeading>
 			<ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
 				{skillsData.map((skill, index) => (
