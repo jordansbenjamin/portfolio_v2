@@ -18,7 +18,6 @@ const wordanalyticsImg = "/wordanalytics.png";
 // It's good to use this when data is persitently hardcoded, but not a good idea to
 // as const when fetching data from an API or backend for exampke
 
-
 export const links = [
 	{
 		name: "Home",
@@ -49,22 +48,47 @@ export const links = [
 export const projectsData = [
 	{
 		title: "Project 1",
-		description: "Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
+		description:
+			"Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
 		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
 		imageUrl: corpcommentImg,
 	},
 	{
 		title: "Project 2",
-		description: "Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
+		description:
+			"Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
 		tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
 		imageUrl: rmtdevImg,
 	},
 	{
 		title: "Project 3",
-		description: "Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
+		description:
+			"Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
 		tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
 		imageUrl: wordanalyticsImg,
 	},
+] as const;
+
+export const skillsData = [
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"TypeScript",
+	"React",
+	"Next.js",
+	"Node.js",
+	"Git",
+	"Tailwind",
+	"Prisma",
+	"MongoDB",
+	"Redux",
+	"GraphQL",
+	"Apollo",
+	"Express",
+	"PostgreSQL",
+	"Python",
+	"Django",
+	"Framer Motion",
 ] as const;
 
 export const experiencesData = [
@@ -91,26 +115,4 @@ export const experiencesData = [
 		icon: React.createElement(FaReact),
 		date: 2023,
 	},
-] as const;
-
-export const skillsData = [
-	"HTML",
-	"CSS",
-	"JavaScript",
-	"TypeScript",
-	"React",
-	"Next.js",
-	"Node.js",
-	"Git",
-	"Tailwind",
-	"Prisma",
-	"MongoDB",
-	"Redux",
-	"GraphQL",
-	"Apollo",
-	"Express",
-	"PostgreSQL",
-	"Python",
-	"Django",
-	"Framer Motion",
 ] as const;
