@@ -1,10 +1,8 @@
 "use client";
 
+// Importing type more specific
+import type { SectionName } from "@/app/lib/types";
 import React, { createContext, useContext, useState } from "react";
-import { links } from "@/app/lib/data";
-
-// It should be any type of links (based on its index, the number) based on the name property
-type SectionName = (typeof links)[number]["name"];
 
 type ActiveSectionContextProviderProps = {
 	children: React.ReactNode;
@@ -19,6 +17,8 @@ type ActiveSectionContextType = {
 	// In this case its the types of section names which is a type we already defined
 	// so we use it in the generic here:
 	setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+	timeOfLastClick: number;
+	setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 // If there is no meaningful default value, add null
@@ -28,12 +28,17 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 
 export default function ActiveSectionContextProvider({ children }: ActiveSectionContextProviderProps) {
 	const [activeSection, setActiveSection] = useState<SectionName>("Home");
+	// This is required as we need to keep track of the time the link was last clicked
+	// In order to disable the observer API temporarily
+	const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
 	return (
 		<ActiveSectionContext.Provider
 			value={{
 				activeSection,
 				setActiveSection,
+				timeOfLastClick,
+				setTimeOfLastClick,
 			}}>
 			{children}
 		</ActiveSectionContext.Provider>

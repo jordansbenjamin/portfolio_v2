@@ -3,7 +3,7 @@
 // motion uses hooks, and hooks can only be used in client components in Next.js
 // so any interactivity should be a client component
 
-import React, { useContext, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/app/lib/data";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 export default function Header() {
 	// const {activeSection, setActiveSection} = useContext(ActiveSectionContext);
-	const { activeSection, setActiveSection } = useActiveSectionContext();
+	const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
 	return (
 		// Relative is required to make the z index work
@@ -38,7 +38,10 @@ export default function Header() {
 								})}
 								href={link.hash}
 								// Changing active link when link is clicked
-								onClick={() => setActiveSection(link.name)}>
+								onClick={() => {
+									setActiveSection(link.name);
+									setTimeOfLastClick(Date.now());
+								}}>
 								{link.name}
 								{/* Conditionally render the active link pill BG */}
 								{link.name === activeSection && (
