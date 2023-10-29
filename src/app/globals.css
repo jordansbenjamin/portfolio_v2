@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Because of next.js server/client component differences
+this only shows us on the client component, so we had to
+override react-vertical-timelines default styling to make
+it work.
+*/
+html {
+	--line-color: #e5e7eb;
+}

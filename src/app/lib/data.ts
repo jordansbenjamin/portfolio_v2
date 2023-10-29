@@ -115,7 +115,8 @@ export const experiencesData = [
 		location: "Sydney, Australia",
 		description:
 			"Worked as a freelance camera & lighting technician in diverse projects for platforms such as Netflix and Stan and brands such as Adobe, Virgin Airlines, and Tourism Australia.",
-		icon: React.createElement(FaReact),
+		// icon: React.createElement(FaReact),
+		icon: React.createElement(CgWorkAlt),
 		date: "2017-2022",
 	},
 ] as const;

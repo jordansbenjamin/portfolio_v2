@@ -11,7 +11,7 @@ export default function Experience() {
 	return (
 		<section id="experience">
 			<SectionHeading>My Experience</SectionHeading>
-			<VerticalTimeline>
+			<VerticalTimeline lineColor="">
 				{experiencesData.map((experience, index) => (
 					<ExperienceItem key={index} experience={experience} />
 				))}
@@ -47,12 +47,18 @@ function ExperienceItem({ experience }: ExperienceProp) {
 					padding: "1.3rem 2rem",
 				}}
 				contentArrowStyle={{
-					borderRight: "0.4rem solid #9ca3af"
+					borderRight: "0.4rem solid #9ca3af",
 				}}
-				date={experience.date}>
-				<h3>{experience.title}</h3>
-				<p>{experience.location}</p>
-				<p>{experience.description}</p>
+				date={experience.date}
+				icon={experience.icon}
+				iconStyle={{
+					background: "white",
+					fontSize: "1.5rem",
+				}}>
+				<h3 className="font-semibold capitalize">{experience.title}</h3>
+				{/* The important rule is required to override 3rd party styling */}
+				<p className="font-normal !mt-0">{experience.location}</p>
+				<p className="!mt-1 !font-normal text-gray-950">{experience.description}</p>
 			</VerticalTimelineElement>
 		</div>
 	);
