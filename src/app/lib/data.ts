@@ -96,6 +96,9 @@ export const experiencesData = [
 		title: "Diploma of Information Technology",
 		location: "Sydney, Australia",
 		description: "Currently finishing my studies at Coder Academy, a full-stack web development bootcamp.",
+		// NOTE: Because the icons itself is a React component and since this is a TS file
+		// and not a TSX file, we cant use JSX here, so we need the default React way to
+		// add components
 		icon: React.createElement(LuGraduationCap),
 		date: 2023,
 	},
