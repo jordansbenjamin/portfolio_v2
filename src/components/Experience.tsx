@@ -20,7 +20,13 @@ export default function Experience() {
 	);
 }
 
-function ExperienceItem({ experience }: any) {
+type ExperienceItemType = (typeof experiencesData)[number];
+
+type ExperienceProp = {
+	experience: ExperienceItemType;
+};
+
+function ExperienceItem({ experience }: ExperienceProp) {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
 	});
