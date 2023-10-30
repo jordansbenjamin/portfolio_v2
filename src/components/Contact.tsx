@@ -25,7 +25,7 @@ export default function Contact() {
 				once: true,
 			}}>
 			<SectionHeading>Contact Me</SectionHeading>
-			<p className="text-gray-700 -mt-3">
+			<p className="text-gray-700 -mt-3 dark:text-white/80">
 				Please contact me directly at{" "}
 				<a href="mailto:jordansbenjamin@gmail.com" className="underline">
 					jordansbenjamin@gmail.com
@@ -63,9 +63,9 @@ export default function Contact() {
 					// otherwise return success message
 					toast.success("Email sent successfully!");
 				}}
-				className="flex flex-col mt-10">
+				className="flex flex-col mt-10 dark:text-black">
 				<input
-					className="h-14 px-4 rounded-lg borderBlack focus:outline-none focus:ring-2 focus:ring-gray-500"
+					className="h-14 px-4 rounded-lg borderBlack focus:outline-none focus:ring-2 focus:ring-gray-500 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
 					// name is required to deal with formData correctly
 					name="senderEmail"
 					type="email"
@@ -77,7 +77,7 @@ export default function Contact() {
 					placeholder="Your email "
 				/>
 				<textarea
-					className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-none focus:ring-2 focus:ring-gray-500"
+					className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
 					name="message"
 					// Client side validation with native HTML5 validation
 					// by setting required to true
