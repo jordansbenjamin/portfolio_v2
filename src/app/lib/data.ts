@@ -10,6 +10,11 @@ import { LuGraduationCap } from "react-icons/lu";
 const corpcommentImg = "/corpcomment.png";
 const rmtdevImg = "/rmtdev.png";
 const wordanalyticsImg = "/wordanalytics.png";
+const portfoliov2Img = "/portfolio-v2.png";
+const kazootImg = "/kazoot.png";
+const simpleCalImg = "/simple-cal.png";
+const blackjackImg = "/bj.png";
+const portfoliov1Img = "/portfolio-v1.png"
 
 // NOTE: Using 'as const' for const assertions with TS. While the properties are inferred as strings,
 // the const assertion will treat each individual item in 'links' as an object with specific properties and values.
@@ -51,7 +56,7 @@ export const projectsData = [
 		description:
 			"You are currently witnessing the MVP version of this portfolio site, I am still yet to add features such as a chat bot and other design elements.",
 		tags: ["React", "Next.js(14)", "TypeScript", "Tailwind", "Framer", "Vercel"],
-		imageUrl: corpcommentImg,
+		imageUrl: portfoliov2Img,
 	},
 	{
 		title: "Cinematica API",
@@ -65,28 +70,28 @@ export const projectsData = [
 		description:
 			"As the name suggests, it's a simple calorie tracker application. Built with React and Bootstrap to practice React patterns.",
 		tags: ["React", "JavaScript", "Bootstrap", "Netlify"],
-		imageUrl: rmtdevImg,
+		imageUrl: simpleCalImg,
 	},
 	{
 		title: "Kazoot",
 		description:
 			"A quiz app (Kahoot style) built on Python using the Tkinter module, one of my first GUI programs but most importantly used it as a study aid for a discrete maths exam, solved a problem I was having.",
 		tags: ["Python", "Tkinter", "Bash", "OOP"],
-		imageUrl: wordanalyticsImg,
+		imageUrl: kazootImg,
 	},
 	{
 		title: "Blackjack",
 		description:
 			"Blackjack terminal game built on Python, my first terminal based program and second major assignment at CoderAcademy.",
 		tags: ["Python", "Bash"],
-		imageUrl: wordanalyticsImg,
+		imageUrl: blackjackImg,
 	},
 	{
 		title: "Portfolio v1",
 		description:
 			"My first portfolio website built entirely on HTML and SCSS with a tiny touch of JS, and my first website major assignment for CoderAcademy.",
 		tags: ["HTML", "SCSS", "JavaScript", "Netlify"],
-		imageUrl: wordanalyticsImg,
+		imageUrl: portfoliov1Img,
 	},
 ] as const;
 
@@ -99,9 +104,10 @@ export const skillsData = [
 	"React",
 	"Next.js",
 	"Redux",
-	"Git",
 	"Tailwind",
 	"Bootstrap",
+	"Git",
+	"Figma",
 	"Framer Motion",
 	"Node.js",
 	"MongoDB",
@@ -110,6 +116,7 @@ export const skillsData = [
 	"Flask",
 	"REST",
 	"PostgreSQL",
+	"Schema design",
 	"Postman",
 	"Bash",
 	"Vercel",
@@ -120,7 +127,8 @@ export const experiencesData = [
 	{
 		title: "Diploma of Information Technology",
 		location: "Sydney, Australia",
-		description: "Currently finishing my studies at Coder Academy, a full-stack web development bootcamp. Interim transcript shows a WAM of 94.64",
+		description:
+			"Currently finishing my studies at Coder Academy, a full-stack web development bootcamp. Interim transcript shows a WAM of 94.64",
 		// NOTE: Because the icons itself is a React component and since this is a TS file
 		// and not a TSX file, we cant use JSX here, so we need the default React way to
 		// add components
