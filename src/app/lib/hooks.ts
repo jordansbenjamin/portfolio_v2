@@ -13,7 +13,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 		threshold,
 	});
 	// console.log(inView);
-	console.log(`${sectionName} in view status: `, inView);
+	// console.log(`${sectionName} in view status: `, inView);
 
 	// Consuming context to grab setter for active section
 	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
@@ -22,7 +22,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 	useEffect(() => {
 		// If the About section is inView
 		// And if the current time minus the timeOfLastClick is greater than 1 second
-		// then setActiveSection to About
+		// then setActiveSection to sectionName
 		if (inView && Date.now() - timeOfLastClick > 1000) {
 			setActiveSection(sectionName);
 		}
@@ -30,5 +30,6 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 
 	return {
 		ref,
+		inView
 	};
 }
