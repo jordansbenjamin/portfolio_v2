@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/app/lib/data";
 import { useInView } from "react-intersection-observer";
 import { useSectionInView } from "@/app/lib/hooks";
+import { useTheme } from "@/context/ThemeContext";
 
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
@@ -38,12 +39,15 @@ function ExperienceItem({ experience }: ExperienceProp) {
 		triggerOnce: true,
 	});
 
+	// useTheme context hook
+	const { theme } = useTheme();
+
 	return (
 		<div ref={ref} className="vertical-timeline-element">
 			<VerticalTimelineElement
 				visible={inView}
 				contentStyle={{
-					background: "#f3f4f6",
+					background: theme === 'light' ? "#f3f4f6" : 'rgba(255,255,255,0.05)',
 					boxShadow: "none",
 					border: "1px solid rgba(0,0,0,0.05)",
 					textAlign: "left",
