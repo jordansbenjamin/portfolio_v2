@@ -15,6 +15,7 @@ const kazootImg = "/kazoot.png";
 const simpleCalImg = "/simple-cal.png";
 const blackjackImg = "/bj.png";
 const portfoliov1Img = "/portfolio-v1.png"
+const cinematicaImg = "/cinematica.png"
 
 // NOTE: Using 'as const' for const assertions with TS. While the properties are inferred as strings,
 // the const assertion will treat each individual item in 'links' as an object with specific properties and values.
@@ -63,7 +64,7 @@ export const projectsData = [
 		description:
 			"Cinematica is a RESTful API developed as my third major project for Coder Academy, developed with Flask and PostgreSQL as the RDBMS.",
 		tags: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "Postman", "Bash"],
-		imageUrl: corpcommentImg,
+		imageUrl: cinematicaImg,
 	},
 	{
 		title: "Simple Cal",
