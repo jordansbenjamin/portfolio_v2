@@ -5,6 +5,7 @@ import SectionHeading from "./SectionHeading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
+import { sendEmail } from "../../actions/sendEmail";
 
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
@@ -19,9 +20,9 @@ export default function Contact() {
 			transition={{
 				duration: 1,
 			}}
-            viewport={{
-                once: true
-            }}>
+			viewport={{
+				once: true,
+			}}>
 			<SectionHeading>Contact Me</SectionHeading>
 			<p className="text-gray-700 -mt-3">
 				Please contact me directly at{" "}
@@ -31,15 +32,47 @@ export default function Contact() {
 				or through this contact form.
 			</p>
 
-			<form action="" className="flex flex-col mt-10">
+			{/* Usually form submission is done through onSubmit={handleSubmit}
+				but next.js has server actions
+			*/}
+			<form
+				// action={async (formData) => {
+				// 	// formData is a general data structure to deal with data from forms
+				// 	// not next.js exclusive?
+				// 	// console.log(formData);
+				// 	console.log("Running on client");
+				// 	console.log(formData.get("senderEmail"));
+				// 	console.log(formData.get("message"));
+				// 	await sendEmail(formData);
+				// }}
+
+				// You can condense it even further
+				// action={sendEmail}
+				// But you need error handling, so you need to do this:
+				action={async (formData) => {
+					await sendEmail(formData);
+				}}
+				className="flex flex-col mt-10">
 				<input
 					className="h-14 px-4 rounded-lg borderBlack focus:outline-none focus:ring-2 focus:ring-gray-500"
+					// name is required to deal with formData correctly
+					name="senderEmail"
 					type="email"
+					// Client side validation with native HTML5 validation
+					// by setting required to true
+					required
+					// And others
+					maxLength={500}
 					placeholder="Your email "
 				/>
 				<textarea
 					className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-none focus:ring-2 focus:ring-gray-500"
-					name=""
+					name="message"
+					// Client side validation with native HTML5 validation
+					// by setting required to true
+					required
+					// And others
+					maxLength={500}
 					id=""
 					placeholder="Your message"></textarea>
 				<button
