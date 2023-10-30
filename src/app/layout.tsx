@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Footer/>
 					<Toaster position="top-right"/>
 				</ActiveSectionContextProvider>
+				{/* For optimisation, its better if theme switch is outside the context
+					because it doesnt require values from the context
+				*/}
+				<ThemeSwitch/>
 			</body>
 		</html>
 	);
