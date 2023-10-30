@@ -39,9 +39,11 @@ export const sendEmail = async (formData: FormData) => {
 		};
 	}
 
+    let data;
+
 	try {
 		// Sending email via resend
-		await resend.emails.send({
+		data = await resend.emails.send({
 			// from resend server/domain, because resend is handling this capability
 			from: "Contact Form <onboarding@resend.dev>",
 			// to send to my own email
@@ -60,4 +62,8 @@ export const sendEmail = async (formData: FormData) => {
 			error: getErrorMessage(error),
 		};
 	}
+
+    return {
+        data
+    }
 };
