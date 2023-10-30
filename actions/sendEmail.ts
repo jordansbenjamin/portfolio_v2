@@ -1,7 +1,9 @@
 "use server";
 
+import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/app/lib/utils";
+import ContactFormEmail from "../email/ContactFormEmail";
 
 // instantiating resend obj
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -50,7 +52,8 @@ export const sendEmail = async (formData: FormData) => {
 			// text: message as string, // basically tells TS I know what this type should be
 
 			// Using react email instead
-			// react:
+			// Since this is a ts and not tsx, we need to do this:
+			react: React.createElement(ContactFormEmail, { message: message as string, senderEmail: senderEmail as string }),
 		});
 	} catch (error: unknown) {
 		return {
