@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className="!scroll-smooth">
-			<body className={`${inter.className} bg-gray-50 text-gray-950 relative h-[5000px] pt-28 sm:pt-36`}>
+			<body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36`}>
 				{/* Relative is required on the body because the BG div elements are absolute,
           so it needs to be relative to the body
         */}

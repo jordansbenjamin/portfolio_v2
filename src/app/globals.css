@@ -11,3 +11,8 @@ it work.
 html {
 	--line-color: #e5e7eb;
 }
+
+/* custom taildwind class for DRY */
+.borderBlack {
+	@apply border border-black/10
+}
