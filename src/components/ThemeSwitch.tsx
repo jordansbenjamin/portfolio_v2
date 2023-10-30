@@ -14,7 +14,7 @@ export default function ThemeSwitch() {
 		if (theme === "light") {
 			setTheme("dark");
 			// persist state to local storage
-			// This is done on this hadnler because its based user actions
+			// This is done on this handler because its based user actions
 			// in this case, toggling the theme on and off
 			window.localStorage.setItem("theme", "dark");
 			document.documentElement.classList.add("dark");
