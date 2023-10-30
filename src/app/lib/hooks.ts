@@ -13,6 +13,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 		threshold,
 	});
 	// console.log(inView);
+	console.log(`${sectionName} in view status: `, inView);
 
 	// Consuming context to grab setter for active section
 	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
