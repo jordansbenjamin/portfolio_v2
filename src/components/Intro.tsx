@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
+import toast from "react-hot-toast";
 
 const profileImg = "/Me_circle.png";
 
@@ -80,12 +81,15 @@ export default function Intro() {
 					}}>
 					Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
 				</Link>
-				{/* Download CV link */}
+				{/* Resume link */}
 				<a
-					href="/CV.pdf"
+					href="/Jordan-Benjamin_Resume.pdf"
 					download
-					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60">
-					Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+					onClick={() => {
+						toast.success("Resume downloaded!");
+					}}>
+					Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
 				</a>
 				{/* LinkedIn link */}
 				<a
