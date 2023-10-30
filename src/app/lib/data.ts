@@ -47,24 +47,45 @@ export const links = [
 
 export const projectsData = [
 	{
-		title: "Project 1",
+		title: "Portfolio v2",
 		description:
-			"Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
-		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+			"You are currently witnessing the MVP version of this portfolio site, I am still yet to add features such as a chat bot and other design elements.",
+		tags: ["React", "Next.js(14)", "TypeScript", "Tailwind", "Framer", "Vercel"],
 		imageUrl: corpcommentImg,
 	},
 	{
-		title: "Project 2",
+		title: "Cinematica API",
 		description:
-			"Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
-		tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+			"Cinematica is a RESTful API developed as my third major project for Coder Academy, developed with Flask and PostgreSQL as the RDBMS.",
+		tags: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "Postman", "Bash"],
+		imageUrl: corpcommentImg,
+	},
+	{
+		title: "Simple Cal",
+		description:
+			"As the name suggests, it's a simple calorie tracker application. Built with React and Bootstrap to practice React patterns.",
+		tags: ["React", "JavaScript", "Bootstrap", "Netlify"],
 		imageUrl: rmtdevImg,
 	},
 	{
-		title: "Project 3",
+		title: "Kazoot",
 		description:
-			"Some description about this project, a short summary. More description to describe the project, it is a full-stack project.",
-		tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+			"A quiz app (Kahoot style) built on Python using the Tkinter module, one of my first GUI programs but most importantly used it as a study aid for a discrete maths exam, solved a problem I was having.",
+		tags: ["Python", "Tkinter", "Bash", "OOP"],
+		imageUrl: wordanalyticsImg,
+	},
+	{
+		title: "Blackjack",
+		description:
+			"Blackjack terminal game built on Python, my first terminal based program and second major assignment at CoderAcademy.",
+		tags: ["Python", "Bash"],
+		imageUrl: wordanalyticsImg,
+	},
+	{
+		title: "Portfolio v1",
+		description:
+			"My first portfolio website built entirely on HTML and SCSS with a tiny touch of JS, and my first website major assignment for CoderAcademy.",
+		tags: ["HTML", "SCSS", "JavaScript", "Netlify"],
 		imageUrl: wordanalyticsImg,
 	},
 ] as const;
@@ -72,30 +93,34 @@ export const projectsData = [
 export const skillsData = [
 	"HTML",
 	"CSS",
+	"SCSS",
 	"JavaScript",
 	"TypeScript",
 	"React",
 	"Next.js",
-	"Node.js",
+	"Redux",
 	"Git",
 	"Tailwind",
-	"Prisma",
-	"MongoDB",
-	"Redux",
-	"GraphQL",
-	"Apollo",
-	"Express",
-	"PostgreSQL",
-	"Python",
-	"Django",
+	"Bootstrap",
 	"Framer Motion",
+	"Node.js",
+	"MongoDB",
+	"Express",
+	"Python",
+	"Flask",
+	"REST",
+	"PostgreSQL",
+	"Postman",
+	"Bash",
+	"Vercel",
+	"Netlify",
 ] as const;
 
 export const experiencesData = [
 	{
 		title: "Diploma of Information Technology",
 		location: "Sydney, Australia",
-		description: "Currently finishing my studies at Coder Academy, a full-stack web development bootcamp.",
+		description: "Currently finishing my studies at Coder Academy, a full-stack web development bootcamp. Interim transcript shows a WAM of 94.64",
 		// NOTE: Because the icons itself is a React component and since this is a TS file
 		// and not a TSX file, we cant use JSX here, so we need the default React way to
 		// add components
@@ -106,15 +131,24 @@ export const experiencesData = [
 		title: "Photographer's Assistant",
 		location: "Sydney, Australia",
 		description:
-			"Worked mainly in the Australian fashion photography industry, working with premier fashion brands and renowned photographers.",
+			"Worked mainly in the Australian fashion photography industry, working with premier fashion brands and assisting renowned photographers.",
 		icon: React.createElement(CgWorkAlt),
 		date: "2021-2023",
+	},
+	{
+		title: "Lighting Technician",
+		location: "Sydney, Australia",
+		description:
+			"Worked as a freelance lighting technician in the commercial space with brands such as Adobe, Virgin Airlines, Taco Bell, Captain Morgan, and Tourism Australia.",
+		// icon: React.createElement(FaReact),
+		icon: React.createElement(CgWorkAlt),
+		date: "2020-2022",
 	},
 	{
 		title: "Camera Assistant",
 		location: "Sydney, Australia",
 		description:
-			"Worked as a freelance camera & lighting technician in diverse projects for platforms such as Netflix and Stan and brands such as Adobe, Virgin Airlines, and Tourism Australia.",
+			"Worked as a freelance camera assistant in diverse projects for platforms such as Netflix and Stan to blockbusters and independent feature films.",
 		// icon: React.createElement(FaReact),
 		icon: React.createElement(CgWorkAlt),
 		date: "2017-2022",
