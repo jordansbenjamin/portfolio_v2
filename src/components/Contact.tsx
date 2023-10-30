@@ -72,7 +72,7 @@ export default function Contact() {
 					// by setting required to true
 					required
 					// And others
-					maxLength={500}
+					maxLength={5000}
 					id=""
 					placeholder="Your message"></textarea>
 				<button
