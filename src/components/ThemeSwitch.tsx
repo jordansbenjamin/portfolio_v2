@@ -17,9 +17,11 @@ export default function ThemeSwitch() {
 			// This is done on this hadnler because its based user actions
 			// in this case, toggling the theme on and off
 			window.localStorage.setItem("theme", "dark");
+			document.documentElement.classList.add("dark");
 		} else {
 			setTheme("light");
 			window.localStorage.setItem("theme", "light");
+			document.documentElement.classList.remove("dark");
 		}
 	};
 
@@ -39,9 +41,14 @@ export default function ThemeSwitch() {
 		if (localTheme) {
 			// set the theme with the currently saved local theme
 			setTheme(localTheme);
+
+			if (localTheme === "dark") {
+				document.documentElement.classList.add("dark");
+			}
 			// if nothing is on local storage we want to check the users computer settings
 		} else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 			setTheme("dark");
+			document.documentElement.classList.add("dark");
 		}
 	}, []);
 

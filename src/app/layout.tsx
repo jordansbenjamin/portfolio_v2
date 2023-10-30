@@ -21,7 +21,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className="!scroll-smooth">
-			<body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36`}>
+			<body
+				className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
 				{/* Relative is required on the body because the BG div elements are absolute,
           so it needs to be relative to the body
         */}
@@ -32,13 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<ActiveSectionContextProvider>
 					<Header />
 					{children}
-					<Footer/>
-					<Toaster position="top-right"/>
+					<Footer />
+					<Toaster position="top-right" />
 				</ActiveSectionContextProvider>
 				{/* For optimisation, its better if theme switch is outside the context
 					because it doesnt require values from the context
 				*/}
-				<ThemeSwitch/>
+				<ThemeSwitch />
 			</body>
 		</html>
 	);
