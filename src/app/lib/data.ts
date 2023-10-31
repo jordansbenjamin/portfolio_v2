@@ -87,7 +87,7 @@ export const projectsData = [
 	{
 		title: "Blackjack",
 		description:
-			"Blackjack terminal game built on Python, my first terminal based program and second major assignment at CoderAcademy.",
+			"Blackjack terminal game built on Python, my first terminal based program and second major assignment at CoderAcademy. It comes with a full functional menu system and tracks game history with I/O.",
 		tags: ["Python", "Bash"],
 		imageUrl: blackjackImg,
 		projectLink: "https://github.com/jordansbenjamin/Blackjack_terminal-app",
