@@ -14,8 +14,8 @@ const portfoliov2Img = "/portfolio-v2.png";
 const kazootImg = "/kazoot.png";
 const simpleCalImg = "/simple-cal.png";
 const blackjackImg = "/bj.png";
-const portfoliov1Img = "/portfolio-v1.png"
-const cinematicaImg = "/cinematica.png"
+const portfoliov1Img = "/portfolio-v1.png";
+const cinematicaImg = "/cinematica.png";
 
 // NOTE: Using 'as const' for const assertions with TS. While the properties are inferred as strings,
 // the const assertion will treat each individual item in 'links' as an object with specific properties and values.
@@ -58,6 +58,7 @@ export const projectsData = [
 			"You are currently witnessing the MVP version of this portfolio site, I am still yet to add features such as a chat bot and other design elements.",
 		tags: ["React", "Next.js(14)", "TypeScript", "Tailwind", "Framer", "Vercel"],
 		imageUrl: portfoliov2Img,
+		projectLink: "https://jordansbenjamin.vercel.app/",
 	},
 	{
 		title: "Cinematica API",
@@ -65,6 +66,7 @@ export const projectsData = [
 			"Cinematica is a RESTful API developed as my third major project for Coder Academy, developed with Flask and PostgreSQL as the RDBMS.",
 		tags: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "Postman", "Bash"],
 		imageUrl: cinematicaImg,
+		projectLink: "https://github.com/jordansbenjamin/Cinematica_API",
 	},
 	{
 		title: "Simple Cal",
@@ -72,6 +74,7 @@ export const projectsData = [
 			"As the name suggests, it's a simple calorie tracker application. Built with React and Bootstrap to practice React patterns.",
 		tags: ["React", "JavaScript", "Bootstrap", "Netlify"],
 		imageUrl: simpleCalImg,
+		projectLink: "https://simple-cal-react.netlify.app/",
 	},
 	{
 		title: "Kazoot",
@@ -79,6 +82,7 @@ export const projectsData = [
 			"A quiz app (Kahoot style) built on Python using the Tkinter module, one of my first GUI programs but most importantly used it as a study aid for a discrete maths exam, solved a problem I was having.",
 		tags: ["Python", "Tkinter", "Bash", "OOP"],
 		imageUrl: kazootImg,
+		projectLink: "https://github.com/jordansbenjamin/Kazoot_PyProject",
 	},
 	{
 		title: "Blackjack",
@@ -86,6 +90,7 @@ export const projectsData = [
 			"Blackjack terminal game built on Python, my first terminal based program and second major assignment at CoderAcademy.",
 		tags: ["Python", "Bash"],
 		imageUrl: blackjackImg,
+		projectLink: "https://github.com/jordansbenjamin/Blackjack_terminal-app",
 	},
 	{
 		title: "Portfolio v1",
@@ -93,6 +98,7 @@ export const projectsData = [
 			"My first portfolio website built entirely on HTML and SCSS with a tiny touch of JS, and my first website major assignment for CoderAcademy.",
 		tags: ["HTML", "SCSS", "JavaScript", "Netlify"],
 		imageUrl: portfoliov1Img,
+		projectLink: "https://jordansbenjamin.netlify.app/",
 	},
 ] as const;
 
