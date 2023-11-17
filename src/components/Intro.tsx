@@ -12,7 +12,8 @@ import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import toast from "react-hot-toast";
 import SocialButton from "./SocialButton";
 
-const profileImg = "/Me_circle.png";
+// const profileImg = "/Me_circle.png";
+const profileImg2 = "/me2.png";
 
 export default function Intro() {
 	const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -30,7 +31,7 @@ export default function Intro() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ type: "tween", duration: 0.5 }}>
 						{/* object-cover preserves the aspect ratio of the img */}
-						<Image
+						{/* <Image
 							src={profileImg}
 							alt="Jordan Profile"
 							width={600}
@@ -38,10 +39,19 @@ export default function Intro() {
 							priority={true}
 							// className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
 							className="h-48 w-48 rounded-full object-cover shadow-xl"
+						/> */}
+						<Image
+							src={profileImg2}
+							alt="Jordan Profile"
+							width={600}
+							height={600}
+							priority={true}
+							// className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+							className="h-80 w-80 object-cover mt-[-60px]"
 						/>
 					</motion.div>
 					{/* emoji span */}
-					<motion.span
+					{/* <motion.span
 						className="absolute bottom-0 right-0 text-5xl"
 						initial={{ opacity: 0, scale: 0 }}
 						animate={{ opacity: 1, scale: 1 }}
@@ -52,7 +62,7 @@ export default function Intro() {
 							duration: 0.7,
 						}}>
 						👋🏽
-					</motion.span>
+					</motion.span> */}
 				</div>
 			</div>
 
