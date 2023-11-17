@@ -22,7 +22,7 @@ const cinematicaImg = "/cinematica.png";
 // Additionally, these objects, as well as the 'links' array itself, become read-only.
 
 // It's good to use this when data is persitently hardcoded, but not a good idea to
-// as const when fetching data from an API or backend for exampke
+// as const when fetching data from an API or backend for example
 
 export const links = [
 	{

@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContext";
+import SocialContainer from "../components/SocialButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						because it doesnt require values from the context
 					*/}
 					<ThemeSwitch />
+					<SocialContainer/>
 				</ThemeContextProvider>
 			</body>
 		</html>

@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import toast from "react-hot-toast";
+import SocialButton from "./SocialButton";
 
 const profileImg = "/Me_circle.png";
 
@@ -92,19 +93,22 @@ export default function Intro() {
 					Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
 				</a>
 				{/* LinkedIn link */}
-				<a
+				{/* <a
 					href="https://www.linkedin.com/in/jordansb/"
 					target="_blank"
 					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60">
 					<BsLinkedin />
-				</a>
+				</a> */}
+				{/* <SocialButton href="https://www.linkedin.com/in/jordansb/">
+					<BsLinkedin />
+				</SocialButton> */}
 				{/* GitHub link */}
-				<a
+				{/* <a
 					href="https://github.com/jordansbenjamin"
 					target="_blank"
 					className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60">
 					<FaGithubSquare />
-				</a>
+				</a> */}
 			</motion.div>
 		</section>
 	);
