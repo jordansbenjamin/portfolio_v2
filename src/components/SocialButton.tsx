@@ -1,3 +1,5 @@
+"use client";
+
 import React, { Children } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
@@ -28,7 +30,8 @@ export default function SocialContainer() {
 		<motion.div
 			className="fixed bottom-5 left-5 space-y-2"
 			initial={{ opacity: 0, y: 100 }}
-			animate={{ opacity: 1, y: 0 }}>
+			animate={{ opacity: 1, y: 0 }}
+			transition={{delay: 0.1}}>
 			<SocialButton href="https://www.linkedin.com/in/jordansb/">
 				<BsLinkedin />
 			</SocialButton>
