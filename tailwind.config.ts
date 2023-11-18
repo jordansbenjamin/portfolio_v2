@@ -10,6 +10,8 @@ const config: Config = {
 		extend: {
 			fontFamily: {
 				gallient: ["Gallient", "sans-serif"],
+				// actu: ["Actu", "sans-serif"],
+				// fogtwono5: ["FogtwoNo5", "sans-serif"],
 			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

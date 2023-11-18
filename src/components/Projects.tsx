@@ -6,13 +6,16 @@ import SectionHeading from "./SectionHeading";
 import { projectsData } from "@/app/lib/data";
 import Project from "./Project";
 import { useSectionInView } from "@/app/lib/hooks";
+import Reveal from "./motion/Reveal";
 
 export default function Projects() {
 	const { ref, inView } = useSectionInView("Projects", 0.2);
 
 	return (
 		<section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-			<SectionHeading>Projects</SectionHeading>
+			<Reveal duration={0.5}>
+				<SectionHeading>Projects</SectionHeading>
+			</Reveal>
 			<div className="">
 				{projectsData.map((project, index) => (
 					<React.Fragment key={index}>
