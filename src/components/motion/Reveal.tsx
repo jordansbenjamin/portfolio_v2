@@ -10,7 +10,7 @@ type RevealProps = {
 	duration?: number;
 };
 
-export default function Reveal({ children, duration = 0.3 }: RevealProps) {
+export default function Reveal({ children, duration = 0.25 }: RevealProps) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 
