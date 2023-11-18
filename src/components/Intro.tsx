@@ -76,7 +76,7 @@ export default function Intro() {
 				Australia. My current focus is <span className="underline">React (Next.js).</span>
 			</motion.h1> */}
 			<h1 className={`font-gallient text-[12rem] px-4`}>Hello</h1>
-			<h2 className={`font-gallient text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</h2>
+			<h2 className={`font-gallient sm:text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</h2>
 
 			{/* Button container */}
 			<motion.div
@@ -85,7 +85,7 @@ export default function Intro() {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ delay: 0.1 }}>
 				{/* Contact me link */}
-				<Link
+				{/* <Link
 					href="#contact"
 					className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
 					onClick={() => {
@@ -93,7 +93,7 @@ export default function Intro() {
 						setTimeOfLastClick(Date.now());
 					}}>
 					Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-				</Link>
+				</Link> */}
 				{/* Resume link */}
 				<a
 					href="/Jordan-Benjamin_Resume.pdf"
