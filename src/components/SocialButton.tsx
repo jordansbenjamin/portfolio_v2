@@ -1,6 +1,7 @@
 import React, { Children } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 type SocialButtonProp = {
 	children: React.ReactNode;
@@ -24,13 +25,16 @@ type SocialContainerType = {
 
 export default function SocialContainer() {
 	return (
-		<div className="fixed bottom-5 left-5 space-y-2">
+		<motion.div
+			className="fixed bottom-5 left-5 space-y-2"
+			initial={{ opacity: 0, y: 100 }}
+			animate={{ opacity: 1, y: 0 }}>
 			<SocialButton href="https://www.linkedin.com/in/jordansb/">
 				<BsLinkedin />
 			</SocialButton>
 			<SocialButton href="https://www.linkedin.com/in/jordansb/">
 				<FaGithubSquare />
 			</SocialButton>
-		</div>
+		</motion.div>
 	);
 }
