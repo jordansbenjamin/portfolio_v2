@@ -1,4 +1,3 @@
-import Head from "next/head";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,21 +14,15 @@ import SocialContainer from "../components/SocialButton";
 const inter = Inter({ subsets: ["latin"] });
 
 // Metadata is necessary for what you see in the tabs
-// UPDATE: CHANGE IN NEXT 14
-// export const metadata: Metadata = {
-// 	title: "Jordan | Portfolio",
-// 	description: "Jordan is an up and coming full-stack developer.",
-// };
+export const metadata: Metadata = {
+	title: "Jordan | Portfolio",
+	description: "Jordan is an up and coming full-stack developer.",
+};
 
 // This is the root component of the app
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className="!scroll-smooth">
-			<Head>
-				<title>Jordan | Portfolio</title>
-				<meta name="description" content="Jordan is an up and coming full-stack developer."/>
-				<link rel="icon" href="/favicon.ico" sizes="any" />
-			</Head>
 			<body
 				className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
 				{/* Relative is required on the body because the BG div elements are absolute,
