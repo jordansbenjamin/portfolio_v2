@@ -26,11 +26,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body
 				className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
 				{/* Relative is required on the body because the BG div elements are absolute,
-          so it needs to be relative to the body
-        */}
+          			so it needs to be relative to the body
+        		*/}
 				{/* BG blurred gradient elements */}
-				<div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-				<div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+				{/* WEIRD BUG WITH CHROME FOR BG BLUR */}
+				{/* <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
+				<div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div> */}
 
 				<ThemeContextProvider>
 					<ActiveSectionContextProvider>
@@ -39,11 +40,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<Footer />
 						<Toaster position="top-right" />
 					</ActiveSectionContextProvider>
-					{/* For optimisation, its better if theme switch is outside the context
-						because it doesnt require values from the context
-					*/}
+					{/* For optimisation, its better if theme switch is outside the ActiveSectionContext because it doesnt require values from it
+					 */}
 					<ThemeSwitch />
-					<SocialContainer/>
+					<SocialContainer />
 				</ThemeContextProvider>
 			</body>
 		</html>

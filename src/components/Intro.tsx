@@ -40,7 +40,7 @@ export default function Intro() {
 							// className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
 							className="h-48 w-48 rounded-full object-cover shadow-xl"
 						/> */}
-						<Image
+						{/* <Image
 							src={profileImg2}
 							alt="Jordan Profile"
 							width={600}
@@ -48,7 +48,7 @@ export default function Intro() {
 							priority={true}
 							// className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
 							className="h-80 w-80 object-cover mt-[-60px]"
-						/>
+						/> */}
 					</motion.div>
 					{/* emoji span */}
 					{/* <motion.span
@@ -67,14 +67,16 @@ export default function Intro() {
 			</div>
 
 			{/* Intro text */}
-			<motion.h1
+			{/* <motion.h1
 				className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}>
 				Hello, <span className="font-bold">I'm Jordan.</span> I'm an aspiring{" "}
 				<span className="font-bold">full-stack web developer</span> based in <span className="font-bold">Sydney,</span>{" "}
 				Australia. My current focus is <span className="underline">React (Next.js).</span>
-			</motion.h1>
+			</motion.h1> */}
+			<h1 className={`font-gallient text-[12rem] px-4`}>Hello</h1>
+			<h2 className={`font-gallient text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</h2>
 
 			{/* Button container */}
 			<motion.div
