@@ -121,13 +121,9 @@ export const skillsData = [
 	"Express",
 	"Python",
 	"Flask",
-	"REST",
 	"PostgreSQL",
-	"Schema design",
 	"Postman",
 	"Bash",
-	"Vercel",
-	"Netlify",
 ] as const;
 
 export const experiencesData = [
