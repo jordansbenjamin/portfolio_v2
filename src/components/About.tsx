@@ -4,20 +4,21 @@ import React from "react";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
+import useDetectScroll from "@smakss/react-scroll-direction";
 
 export default function About() {
 	const {ref} = useSectionInView('About');
+	const scrollDir = useDetectScroll();
 
 	return (
-		// <motion.section
-		<section
+		<motion.section
 			ref={ref}
 			// scroll-mt-28 is required to add space above the section when routing to it
 			className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-			// initial={{ opacity: 0, y: 100 }}
-			// whileInView={{ opacity: 1, y: 0 }}
-			// transition={{ delay: 0.175, duration: 1 }}
-			// viewport={{once: true}}
+			initial={{ opacity: 0, y: 500 }}
+			animate={{ opacity: scrollDir ? 1 : 0, y: 0 }}
+			transition={{ delay: 1.8, duration: 1.5 }}
+			viewport={{once: true}}
 			id="about">
 			{/* <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2> */}
 			<SectionHeading>About me</SectionHeading>
@@ -36,6 +37,6 @@ export default function About() {
 				When I'm not at the computer, I'm usually swimming, taking photos with my camera, going on adventures with my
 				partner or at home watching movies with our 3 cats. I love Formula 1, so I would be either watching or sim racing.
 			</p>
-		</section>
+		</motion.section>
 	);
 }
