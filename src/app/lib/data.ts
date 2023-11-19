@@ -52,14 +52,14 @@ export const links = [
 ] as const;
 
 export const projectsData = [
-	{
-		title: "Portfolio v2",
-		description:
-			"You are currently witnessing the MVP version of this portfolio site, I am still yet to add features such as a chat bot and other design elements.",
-		tags: ["React", "Next.js(14)", "TypeScript", "Tailwind", "Framer", "Vercel"],
-		imageUrl: portfoliov2Img,
-		projectLink: "https://jordansbenjamin.vercel.app/",
-	},
+	// {
+	// 	title: "Portfolio v2",
+	// 	description:
+	// 		"You are currently witnessing the MVP version of this portfolio site, I am still yet to add features such as a chat bot and other design elements.",
+	// 	tags: ["React", "Next.js(14)", "TypeScript", "Tailwind", "Framer", "Vercel"],
+	// 	imageUrl: portfoliov2Img,
+	// 	projectLink: "https://jordansbenjamin.vercel.app/",
+	// },
 	{
 		title: "Cinematica API",
 		description:
