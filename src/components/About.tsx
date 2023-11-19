@@ -14,7 +14,7 @@ export default function About() {
 		<motion.section
 			ref={ref}
 			// scroll-mt-28 is required to add space above the section when routing to it
-			className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+			className="mb-28 max-w-[45rem] text-center sm:text-[1.06rem] leading-8 sm:mb-40 scroll-mt-28"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: scrollDir === 'down' ? 1 : 0, y: 0 }}
 			transition={{ delay: .8, duration: .8 }}
@@ -34,8 +34,7 @@ export default function About() {
 				but I have a strong affinity towards front-end web development.
 			</p>
 			<p>
-				When I'm not at the computer, I'm usually swimming, taking photos with my camera, going on adventures with my
-				partner or at home watching movies with our 3 cats. I love Formula 1, so I would be either watching or sim racing.
+				When I'm not at the computer, I'm usually discovering new recipes to cook or places to eat, I am a certified foodie. Otherwise, I love sports, racing and football is lovely combination. Oh and I'm a huge film buff, so ask me anything about movies or tv shows.
 			</p>
 		</motion.section>
 	);
