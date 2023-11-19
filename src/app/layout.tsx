@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
+import { Inter, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 // To prevent absolute or relative pathing, use the @ instead
 // It's added by next.js in the TS config file under paths as an alias
@@ -12,7 +12,7 @@ import ThemeContextProvider from "@/context/ThemeContext";
 import SocialContainer from "../components/SocialButton";
 
 const inter = Inter({ subsets: ["latin"] });
-// const nunito = Nunito({ subsets: ["latin"] });
+const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 // Metadata is necessary for what you see in the tabs
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en" className="!scroll-smooth">
 			<body
-				className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
+				className={`${nunito.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
 				{/* Relative is required on the body because the BG div elements are absolute,
           			so it needs to be relative to the body
         		*/}
