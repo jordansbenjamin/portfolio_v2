@@ -3,17 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-	font-family: "Gallient";
-	src: url("/fonts/GallientRegular.woff") format("woff"), 
-	url("/fonts/GallientRegular.ttf") format("truetype");
+/* global.css */
+@font-face {
+	font-family: "GallientRegular";
+	src: url("./fonts/gallientregular-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
-
-body {
-	font-family: 'Gallient', sans-serif;
-} */
 
 /* Because of next.js server/client component differences
 this only shows us on the client component, so we had to

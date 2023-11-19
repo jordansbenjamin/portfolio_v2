@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Nunito } from "next/font/google";
 import "./globals.css";
 // To prevent absolute or relative pathing, use the @ instead
 // It's added by next.js in the TS config file under paths as an alias
@@ -12,6 +12,7 @@ import ThemeContextProvider from "@/context/ThemeContext";
 import SocialContainer from "../components/SocialButton";
 
 const inter = Inter({ subsets: ["latin"] });
+// const nunito = Nunito({ subsets: ["latin"] });
 
 // Metadata is necessary for what you see in the tabs
 export const metadata: Metadata = {

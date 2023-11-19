@@ -9,9 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				gallient: ["Gallient", "sans-serif"],
-				// actu: ["Actu", "sans-serif"],
-				// fogtwono5: ["FogtwoNo5", "sans-serif"],
+				gallient: ["GallientRegular", "sans-serif"],
 			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
