@@ -75,8 +75,15 @@ export default function Intro() {
 				<span className="font-bold">full-stack web developer</span> based in <span className="font-bold">Sydney,</span>{" "}
 				Australia. My current focus is <span className="underline">React (Next.js).</span>
 			</motion.h1> */}
-			<h1 className={`font-gallient text-[10rem] sm:text-[12rem] px-4`}>Hello</h1>
-			<h2 className={`font-gallient text-3xl sm:text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</h2>
+			<motion.h1 
+			initial={{opacity: 0, y: 100}}
+			animate={{opacity: 1, y: 0}}
+			className={`font-gallient text-[10rem] sm:text-[12rem] px-4`}>Hello</motion.h1>
+			<motion.h2 
+			initial={{opacity: 0, y: 100}}
+			animate={{opacity: 1, y: 0}}
+			transition={{delay: 0.15}}
+			className={`font-gallient text-3xl sm:text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</motion.h2>
 
 			{/* Button container */}
 			<motion.div

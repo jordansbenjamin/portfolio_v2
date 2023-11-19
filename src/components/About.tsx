@@ -15,10 +15,10 @@ export default function About() {
 			ref={ref}
 			// scroll-mt-28 is required to add space above the section when routing to it
 			className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-			initial={{ opacity: 0, y: 500 }}
-			animate={{ opacity: scrollDir ? 1 : 0, y: 0 }}
-			transition={{ delay: 1.8, duration: 1.5 }}
-			viewport={{once: true}}
+			initial={{ opacity: 0, y: 100 }}
+			animate={{ opacity: scrollDir === 'down' ? 1 : 0, y: 0 }}
+			transition={{ delay: .8, duration: .8 }}
+			// viewport={{once: true}}
 			id="about">
 			{/* <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2> */}
 			<SectionHeading>About me</SectionHeading>
