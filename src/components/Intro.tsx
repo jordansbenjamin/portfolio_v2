@@ -20,7 +20,7 @@ export default function Intro() {
 	const { ref } = useSectionInView("Home", 0.5);
 
 	return (
-		<section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+		<section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-72 scroll-mt-[100rem]">
 			{/* Image container */}
 			<div className="flex items-center justify-center">
 				<div className="relative">
@@ -75,8 +75,8 @@ export default function Intro() {
 				<span className="font-bold">full-stack web developer</span> based in <span className="font-bold">Sydney,</span>{" "}
 				Australia. My current focus is <span className="underline">React (Next.js).</span>
 			</motion.h1> */}
-			<h1 className={`font-gallient text-[12rem] px-4`}>Hello</h1>
-			<h2 className={`font-gallient sm:text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</h2>
+			<h1 className={`font-gallient text-[10rem] sm:text-[12rem] px-4`}>Hello</h1>
+			<h2 className={`font-gallient text-3xl sm:text-5xl mb-14 px-4 mt-[-50px]`}>My name is Jordan Benjamin.</h2>
 
 			{/* Button container */}
 			<motion.div

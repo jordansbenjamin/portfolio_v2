@@ -5,5 +5,5 @@ type ScetionHeadingProps = {
 };
 
 export default function SectionHeading({ children }: ScetionHeadingProps) {
-	return <h2 className="font-gallient text-7xl font-medium capitalize mb-8 text-center">{children}</h2>;
+	return <h2 className="font-gallient text-5xl sm:text-7xl font-medium capitalize mb-8 text-center">{children}</h2>;
 }

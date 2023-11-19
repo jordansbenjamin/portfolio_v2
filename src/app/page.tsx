@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<main className="flex flex-col items-center px-4">
 			<Intro />
-			<SectionDivider />
+			{/* <SectionDivider /> */}
 			<Reveal duration={0.8}>
 				<About />
 			</Reveal>

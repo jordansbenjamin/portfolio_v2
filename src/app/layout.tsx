@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContext";
 import SocialContainer from "../components/SocialButton";
+import SectionDivider from "@/components/SectionDivider";
 
 const inter = Inter({ subsets: ["latin"] });
 const nunito = Nunito_Sans({ subsets: ["latin"] });
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					 */}
 					<ThemeSwitch />
 					<SocialContainer />
+					<SectionDivider />
 				</ThemeContextProvider>
 			</body>
 		</html>
