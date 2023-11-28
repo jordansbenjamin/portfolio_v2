@@ -18,7 +18,7 @@ export default function About() {
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: scrollDir === 'down' ? 1 : 0, y: 0 }}
 			transition={{ delay: .8, duration: .8 }}
-			// viewport={{once: true}}
+			viewport={{once: true}}
 			id="about">
 			{/* <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2> */}
 			<SectionHeading>About me</SectionHeading>
