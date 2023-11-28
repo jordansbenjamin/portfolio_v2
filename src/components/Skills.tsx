@@ -22,12 +22,13 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-	const { ref } = useSectionInView("Skills");
+	// const { ref } = useSectionInView("Skills");
 
 	return (
 		// max-w-[53rem] restricts the max width of the section
 		// scroll-mt-28 adds space to top when scrolling into section
-		<section ref={ref} id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+		// <section ref={ref} id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+		<section id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
 			<Reveal>
 				<SectionHeading>My Skills</SectionHeading>
 			</Reveal>
