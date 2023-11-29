@@ -78,17 +78,17 @@ export default function Intro() {
 			<motion.h1 
 			initial={{opacity: 0, y: 100}}
 			animate={{opacity: 1, y: 0}}
-			className={`font-gallient text-[10rem] sm:text-[12rem] px-4`}>Hello.</motion.h1>
+			className={`font-gallient text-[12rem] sm:text-[12rem] px-4`}>Hello.</motion.h1>
 			<motion.h2 
 			initial={{opacity: 0, y: 100}}
 			animate={{opacity: 1, y: 0}}
 			transition={{delay: 0.15}}
-			className={`font-gallient text-3xl sm:text-5xl mb-16 px-4 mt-[-50px]`}>I'm Jordan Benjamin</motion.h2>
+			className={`font-gallient text-[3.2rem] sm:text-[3.1rem] mb-16 px-4 mt-[-50px]`}>I'm Jordan Benjamin</motion.h2>
 			<motion.h3 
 			initial={{opacity: 0, y: 100}}
 			animate={{opacity: 1, y: 0}}
 			transition={{delay: 0.15}}
-			className={`font-gallient text-3xl sm:text-5xl mb-14 px-4 mt-[-50px]`}>Junior Dev from Sydney</motion.h3>
+			className={`font-gallient text-[3rem] sm:text-5xl mb-14 px-4 mt-[-70px] sm:mt-[-45px]`}>Junior Dev from Sydney</motion.h3>
 
 			{/* Button container */}
 			<motion.div
