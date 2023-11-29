@@ -1,14 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
 import useDetectScroll from "@smakss/react-scroll-direction";
 
 export default function About() {
-	const {ref} = useSectionInView('About');
+	const { ref } = useSectionInView("About");
 	const scrollDir = useDetectScroll();
+	
+	// const [isVisible, setIsVisible] = useState(false);
+	// const componentInView = () => {
+	// 	if (scrollDir === "down") {
+	// 		setIsVisible(true);
+	// 		return isVisible;
+	// 	}
+	// };
 
 	return (
 		<motion.section
@@ -16,9 +24,9 @@ export default function About() {
 			// scroll-mt-28 is required to add space above the section when routing to it
 			className="mb-28 max-w-[45rem] text-center sm:text-[1.06rem] leading-8 sm:mb-40 scroll-mt-28"
 			initial={{ opacity: 0, y: 100 }}
-			animate={{ opacity: scrollDir === 'down' ? 1 : 0, y: 0 }}
-			transition={{ delay: .8, duration: .8 }}
-			viewport={{once: true}}
+			animate={{ opacity: scrollDir === "down" ? 1 : 0, y: 0 }}
+			transition={{ delay: 0.8, duration: 0.8 }}
+			viewport={{ once: true }}
 			id="about">
 			{/* <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2> */}
 			<SectionHeading>About me</SectionHeading>
@@ -34,7 +42,9 @@ export default function About() {
 				but I have a strong affinity towards front-end web development.
 			</p>
 			<p>
-				When I'm not at the computer, I'm usually discovering new recipes to cook or places to eat, I am a certified foodie. Otherwise, I love sports, racing and football is lovely combination. Oh and I'm a huge film buff, so ask me anything about movies or tv shows.
+				When I'm not at the computer, I'm usually discovering new recipes to cook or places to eat, I am a certified foodie.
+				Otherwise, I love sports, racing and football is lovely combination. Oh and I'm a huge film buff, so ask me anything
+				about movies or tv shows.
 			</p>
 		</motion.section>
 	);
