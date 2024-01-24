@@ -75,20 +75,26 @@ export default function Intro() {
 				<span className="font-bold">full-stack web developer</span> based in <span className="font-bold">Sydney,</span>{" "}
 				Australia. My current focus is <span className="underline">React (Next.js).</span>
 			</motion.h1> */}
-			<motion.h1 
-			initial={{opacity: 0, y: 100}}
-			animate={{opacity: 1, y: 0}}
-			className={`font-gallient text-[12rem] sm:text-[12rem] px-4`}>Hello.</motion.h1>
-			<motion.h2 
-			initial={{opacity: 0, y: 100}}
-			animate={{opacity: 1, y: 0}}
-			transition={{delay: 0.15}}
-			className={`font-gallient text-[3.2rem] sm:text-[3.1rem] mb-16 px-4 mt-[-50px]`}>I'm Jordan Benjamin</motion.h2>
-			<motion.h3 
-			initial={{opacity: 0, y: 100}}
-			animate={{opacity: 1, y: 0}}
-			transition={{delay: 0.15}}
-			className={`font-gallient text-[3rem] sm:text-5xl mb-14 px-4 mt-[-70px] sm:mt-[-45px]`}>Junior Dev from Sydney</motion.h3>
+			<motion.h1
+				initial={{ opacity: 0, y: 100 }}
+				animate={{ opacity: 1, y: 0 }}
+				className={`font-gallient text-[12rem] sm:text-[12rem] px-4`}>
+				Hello.
+			</motion.h1>
+			<motion.h2
+				initial={{ opacity: 0, y: 100 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ delay: 0.15 }}
+				className={`font-gallient text-[3.2rem] sm:text-[3.1rem] mb-16 px-4 mt-[-50px] sm:mt-[-60px]`}>
+				I'm Jordan Benjamin
+			</motion.h2>
+			<motion.h3
+				initial={{ opacity: 0, y: 100 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ delay: 0.15 }}
+				className={`font-gallient text-[3rem] sm:text-5xl mb-14 px-4 mt-[-70px] sm:mt-[-55px]`}>
+				Junior Dev from Sydney
+			</motion.h3>
 
 			{/* Button container */}
 			<motion.div
@@ -107,8 +113,18 @@ export default function Intro() {
 					Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
 				</Link> */}
 				{/* Resume link */}
+				{/* <a
+					href="https://drive.google.com/file/d/1VL9kO1xnXXlbjc0dOmoIiFbYEV_t2xib/view?usp=sharing"
+					target="_blank"
+					download
+					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
+					onClick={() => {
+						toast.success("Resume downloaded!");
+					}}>
+					Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+				</a> */}
 				<a
-					href="/Jordan-Benjamin_Resume.pdf"
+					href="/JordanBenjamin_Resume.pdf"
 					download
 					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/10 dark:text-white/60"
 					onClick={() => {
