@@ -16,6 +16,7 @@ const simpleCalImg = "/simple-cal.png";
 const blackjackImg = "/bj.png";
 const portfoliov1Img = "/portfolio-v1.png";
 const cinematicaImg = "/cinematica.png";
+const spacesacerImg = "/spacesaver.png";
 
 // NOTE: Using 'as const' for const assertions with TS. While the properties are inferred as strings,
 // the const assertion will treat each individual item in 'links' as an object with specific properties and values.
@@ -60,6 +61,14 @@ export const projectsData = [
 	// 	imageUrl: portfoliov2Img,
 	// 	projectLink: "https://jordansbenjamin.vercel.app/",
 	// },
+	{
+		title: "SpaceSaver",
+		description:
+			"SpaceSaver is a MERN stack Single Page Application, developed in a team of two developers and my last major project for Coder Academy. Most challenging program to date.",
+		tags: ["React", "Express", "MongoDB", "Node", "Tailwind"],
+		imageUrl: spacesacerImg,
+		projectLink: "https://space-saver.netlify.app/",
+	},
 	{
 		title: "Cinematica API",
 		description:

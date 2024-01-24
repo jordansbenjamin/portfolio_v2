@@ -42,9 +42,9 @@ export default function About() {
 				but I have a strong affinity towards front-end web development.
 			</p>
 			<p>
-				When I'm not at the computer, I'm usually discovering new recipes to cook or places to eat, I am a certified foodie.
-				Otherwise, I love sports, racing and football is lovely combination. Oh and I'm a huge film buff, so ask me anything
-				about movies or tv shows.
+				When I'm not at the computer (distracted at times by my cat), I'm usually discovering new places to eat, I am a certified foodie.
+				Otherwise, I love sports, racing and football is a lovely combination. Oh and I'm a huge film buff, so ask me anything
+				about movies or tv shows!
 			</p>
 		</motion.section>
 	);

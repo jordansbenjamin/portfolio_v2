@@ -36,11 +36,11 @@ export default function SocialContainer() {
 			<SocialButton href="https://www.linkedin.com/in/jordansb/">
 				<FaLinkedin />
 			</SocialButton>
-			<SocialButton href="https://www.linkedin.com/in/jordansb/">
+			<SocialButton href="https://github.com/jordansbenjamin">
 				<FaGithubSquare />
 			</SocialButton>
 			<SocialButton href="https://www.instagram.com/jordansbenjamin/">
-				<FaInstagram/>
+				<FaInstagram />
 			</SocialButton>
 		</motion.div>
 	);
